@@ -1,1 +1,23 @@
-<p>nav works!</p>
+<div>
+  <!-- Bouton pour choisir le critère de tri -->
+  <select [(ngModel)]="selectedCriterion">
+    <option value="genre">Genre</option>
+    <option value="actor">Acteur</option>
+  </select>
+
+  <!-- Champ de texte pour la saisie -->
+  <input type="text" [(ngModel)]="searchTerm" placeholder="Taper le texte...">
+
+  <!-- Bouton pour déclencher le tri -->
+  <button (click)="sortByCriterion()">Trier par {{ selectedCriterion }}</button>
+
+  <!-- Afficher la liste triée des films -->
+  <ul *ngIf="movies.length > 0">
+    <li *ngFor="let movie of movies">
+      <!-- ... (votre code d'affichage) -->
+    </li>
+  </ul>
+
+  <!-- Afficher un message si aucun film n'est trouvé -->
+  <p *ngIf="movies.length === 0">Aucun film trouvé.</p>
+</div>

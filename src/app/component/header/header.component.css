@@ -53,6 +53,7 @@ button:hover {
   position: absolute;
   left: 390px; /* Ajustez cette valeur selon vos besoins */
   font-size: 0.9em;
+
 }
 .fa-search {
   margin-right: 5px; /* Ajustez la marge à droite selon vos besoins */

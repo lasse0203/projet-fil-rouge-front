@@ -43,3 +43,54 @@ img {
 .app-movie img {
   border-radius: 10px 10px 0 0;
 }
+
+
+/* Style pour la fenêtre modale */
+.modal-container {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  max-width: 300px; /* Ajustez la largeur maximale selon vos préférences */
+  height: 40%; /* Ajustez la hauteur à 50% de la fenêtre parente (l'image) */
+  text-align: center; /* Centre le texte à l'intérieur de la fenêtre modale */
+}
+
+
+/* Style du titre dans la fenêtre modale */
+.modal-container h3 {
+  font-size: 1.2rem;
+  color: #900404;
+  margin-bottom: 10px;
+}
+
+/* Style du paragraphe dans la fenêtre modale */
+.modal-container p {
+  font-size: 0.7rem;
+  color: #d3c9c9; /* Texte en gris clair */
+  font-family:sans-serif;
+  text-align:justify;
+}
+
+/* Style pour l'icône d'étoile de notation */
+.modal-container .star-icon {
+  color: #f8d231;
+  font-size: 1.4rem;
+  margin-right: 5px;
+}
+
+/* Afficher la fenêtre modale lorsque survolant l'image */
+.app-movie:hover .modal-container {
+  display: block;
+  opacity: 1;
+}
+
+

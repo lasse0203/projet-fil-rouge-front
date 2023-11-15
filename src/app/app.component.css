@@ -27,6 +27,8 @@ app-header {
   padding: 0px;
 }
 
+router-outlet { display: none;}
+
 app-nav {
   grid-area: nav;
   margin-left: 0.6rem;

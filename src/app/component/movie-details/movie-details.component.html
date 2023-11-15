@@ -1,0 +1,8 @@
+<!-- movie-details.component.html -->
+
+<div *ngIf="movie">
+  <h2>{{ movie.title }}</h2>
+  <img [src]="movie.poster" alt="{{ movie.title }} Poster">
+  <p>{{ movie.description }}</p>
+  <!-- Add other movie details as needed -->
+</div>
