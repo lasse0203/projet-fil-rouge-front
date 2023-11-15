@@ -1,6 +1,5 @@
-
-<div *ngFor="let movie of movies">
-  <h2>{{ movie.title }}</h2>
-  <p>{{ movie.description }}</p>
+<div class="app-movie-list">
+  <div *ngFor="let movie of movies" class="app-movie">
+    <img [src]="movie.poster" alt="Movie Poster">
+  </div>
 </div>
-

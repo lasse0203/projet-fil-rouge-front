@@ -6,17 +6,27 @@ import { AppComponent } from './app.component';
 import { DataComponent } from './data/data.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './component/header/header.component';
+import { NavComponent } from './component/nav/nav.component';
+import { AsideComponent } from './component/aside/aside.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataComponent,
-    MovieListComponent
+    MovieListComponent,
+    HeaderComponent,
+    NavComponent,
+    AsideComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [MovieService],
   bootstrap: [AppComponent]
