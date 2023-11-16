@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-eoakFs0aPq4LJbKrEmo3WA8fH4P6qLH3DAgo8fjqQ00XmewQvOTM8GtvcU9xixv5" crossorigin="anonymous">
+
+
+<div class="app-series-list">
+    <div *ngFor="let serie of series" class="app-series" [routerLink]="['/serie-details', serie.id]">
+        <img [src]="serie.poster" alt="{{serie.title}} poster">
+        <div class="modal-container">
+            <h3>{{serie.title}}</h3>
+            <p>{{serie.description}}</p>
+            <p>
+                <span class="star-icon">&#9733;</span>
+                Note : {{serie.rating}}
+            </p>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="serie-details-container" *ngIf="serie">
+    <h2>{{ serie.title }}</h2>
+    <div class="poster-container">
+      <img [src]="serie.poster" alt="{{ serie.title }} Poster" class="serie-poster">
+    </div>
+    <p class="description">{{ serie.description }}</p>
+    <p class="description">{{ serie.country }}</p>
+  
+    <!-- Display genres -->
+    <p class="description">
+      Genres:
+      <span *ngFor="let genre of serie.genres">{{ genre }}, </span>
+    </p>
+  
+    <!-- Display persons -->
+    <p class="description">
+      Persons:
+       <!--<span *ngFor="let person of movie.persons">{{ person.name }}, </span> -->
+    </p>
+  
+    <p class="description">{{ serie.date }}</p>
+    <p class="description">{{ serie.rating}}</p>
+    <p class="description">{{ serie.comments}}</p>
+  
+    <button mat-button routerLink="/series-list">Back</button>
+  </div>
+  

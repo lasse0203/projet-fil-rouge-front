@@ -1,0 +1,95 @@
+/*@import '~@fortawesome/fontawesome-free/css/all.css';
+
+/* Style pour le conteneur principal */
+.container {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Style pour le titre CinemaBuddy */
+p {
+  font-size: 3em;
+  font-weight: bold;
+  color: #000000; /* Couleur du texte */
+  margin-bottom: 20px;
+}
+
+/* Style pour le conteneur de la barre de recherche */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Style pour le champ de saisie */
+input {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 50px;
+  margin-right: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Style pour le bouton de recherche */
+button {
+  padding: 10px 10px;
+  font-size: 0.9em;
+  background-color: #900404; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Animation de transition de la couleur de fond */
+}
+
+/* Animation de transition pour le bouton au survol */
+button:hover {
+  background-color: #030303; /* Nouvelle couleur de fond au survol */
+}
+.fa-bars {
+  font-size: 2em;
+  position: absolute;
+  left: 390px; /* Ajustez cette valeur selon vos besoins */
+  font-size: 0.9em;
+
+}
+.fa-search {
+  margin-right: 5px; /* Ajustez la marge à droite selon vos besoins */
+}
+/* Style pour les résultats de la recherche */
+.results-container {
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Style pour le titre des résultats */
+h3 {
+  font-size: 2em;
+  color: #900404; /* Couleur du texte */
+  margin-bottom: 10px;
+}
+
+/* Style pour la liste des résultats */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style pour chaque élément de la liste des résultats */
+li {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #333; /* Couleur du texte */
+  cursor: pointer;
+  transition: color 0.3s ease; /* Animation de transition de la couleur du texte */
+}
+
+/* Ajoute une animation lorsque l'utilisateur survole un élément de la liste */
+li:hover {
+  color: #2bb961; /* Nouvelle couleur du texte au survol */
+}
+/* Style pour l'icône de menu */
+/* Style pour l'icône de menu à l'extrême droite */
+

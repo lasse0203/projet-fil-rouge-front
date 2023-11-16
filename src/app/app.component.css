@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #e4f0ff;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 12px;
+    grid-template-areas:
+        "header header header"
+        "nav content side"
+        "footer footer footer";
+    height: 10vh;
+  
+  }
+  
+  app-header {
+    color: white;
+    font-size: 18px;
+    grid-area: header;
+    text-align: center;
+    background-color: #900404;
+    padding: 0px;
+  }
+  
+  router-outlet { display: none;}
+  
+  app-nav {
+    grid-area: nav;
+    margin-left: 0.6rem;
+    background-color: #080808;
+  }
+  
+  app-privacy-policy,
+  app-movie-list {
+    grid-area: content;
+    background-color: #edebe5;
+    padding: 15px;
+  }
+  
+  app-aside {
+    grid-area: side;
+    margin-right: 0.1rem;
+    background-color: #000305;
+  }
+  
+  app-footer {
+    grid-area: footer;
+    background-color: #900404;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  ul li {
+    color: white;
+  }
+  
+  ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  
+  
