@@ -24,16 +24,16 @@ export class MovieService {
 
 
   getMovieById(id: number): Observable<MovieDTO> {
-    return this.http.get<MovieDTO>(`http://localhost:8080/api/v1/movies/movie/${id}`);
+    return this.http.get<MovieDTO>(`http://localhost:8080/api/v1/movies/${id}`);
 }
 
 
   getMoviesByGenre(genre: string): Observable<MovieDTO[]> {
-    return this.http.get<MovieDTO[]>(`${this.apiUrl}/${genre}`);
+    return this.http.get<MovieDTO[]>(`http://localhost:8080/api/v1/movies/genre/${genre}`);
   }
 
   getMoviesByActor(actor: string): Observable<MovieDTO[]> {
-    return this.http.get<MovieDTO[]>(`${this.apiUrl}/${actor}`);
+    return this.http.get<MovieDTO[]>(`http://localhost:8080/api/v1/movies/actor/${actor}`);
   }
 
   getMoviesByTitle(title: string): Observable<MovieDTO[]> {

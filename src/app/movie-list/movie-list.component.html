@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-eoakFs0aPq4LJbKrEmo3WA8fH4P6qLH3DAgo8fjqQ00XmewQvOTM8GtvcU9xixv5" crossorigin="anonymous">
 
 <div class="app-movie-list">
-  <div *ngFor="let movie of movies" class="app-movie" [routerLink]="['/movie-details', movie.id]">
+  <div *ngFor="let movie of movies" class="app-movie" >
     <img [src]="movie.poster" alt="{{ movie.title }} Poster">
     <div class="modal-container">
       <h3>{{ movie.title }}</h3>

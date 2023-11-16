@@ -5,6 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { MovieDTO } from 'src/app/movie-dto.model';
 import { MovieService } from 'src/app/service/movie/movie.service';
 
+
 @Component({
   selector: 'app-movie-details',
   templateUrl: './movie-details.component.html',
