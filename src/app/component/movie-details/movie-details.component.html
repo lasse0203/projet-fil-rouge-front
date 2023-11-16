@@ -1,8 +1,26 @@
-<!-- movie-details.component.html -->
-
-<div *ngIf="movie">
+<div class="movie-details-container" *ngIf="movie">
   <h2>{{ movie.title }}</h2>
-  <img [src]="movie.poster" alt="{{ movie.title }} Poster">
-  <p>{{ movie.description }}</p>
-  <!-- Add other movie details as needed -->
+  <div class="poster-container">
+    <img [src]="movie.poster" alt="{{ movie.title }} Poster" class="movie-poster">
+  </div>
+  <p class="description">{{ movie.description }}</p>
+  <p class="description">{{ movie.country }}</p>
+
+  <!-- Display genres -->
+  <p class="description">
+    Genres:
+    <span *ngFor="let genre of movie.genres">{{ genre }}, </span>
+  </p>
+
+  <!-- Display persons -->
+  <p class="description">
+    Persons:
+     <!--<span *ngFor="let person of movie.persons">{{ person.name }}, </span> -->
+  </p>
+
+  <p class="description">{{ movie.release_date }}</p>
+  <p class="description">{{ movie.rating}}</p>
+  <p class="description">{{ movie.comments}}</p>
+
+  <button mat-button routerLink="/movie-list">Back</button>
 </div>

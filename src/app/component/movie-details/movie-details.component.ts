@@ -16,13 +16,17 @@ export class MovieDetailsComponent implements OnInit {
   constructor(private route: ActivatedRoute, private movieService: MovieService) {}
 
   ngOnInit() {
+    console.log('MovieDetailsComponent initialized.');
+
     const snapshot = this.route.snapshot;
 
     if (snapshot && snapshot.paramMap) {
       const movieId = +snapshot.paramMap.get('id')!;
+      console.log('Movie ID:', movieId);
 
       this.movieService.getMovieById(movieId).subscribe(
         (data: MovieDTO) => {
+          console.log('Movie details:', data);
           this.movie = data;
         },
         error => {
@@ -32,4 +36,3 @@ export class MovieDetailsComponent implements OnInit {
     }
   }
 }
-

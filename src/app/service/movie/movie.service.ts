@@ -22,9 +22,11 @@ export class MovieService {
     return this.http.get<MovieDTO[]>(`${this.apiUrl}/list`);
   }
 
+
   getMovieById(id: number): Observable<MovieDTO> {
-    return this.http.get<MovieDTO>(`${this.apiUrl}/${id}`);
-  }
+    return this.http.get<MovieDTO>(`http://localhost:8080/api/v1/movies/movie/${id}`);
+}
+
 
   getMoviesByGenre(genre: string): Observable<MovieDTO[]> {
     return this.http.get<MovieDTO[]>(`${this.apiUrl}/${genre}`);
