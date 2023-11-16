@@ -9,7 +9,7 @@ import SerieDTO from 'src/app/models/series-dto';
 export class SeriesService {
 
 
-  private apiUrl = 'http://localhost:8080/api/v1/series';
+  private apiUrl = `http://localhost:8080/api/v1/series`;
 
   constructor(private http: HttpClient) { }
 
@@ -34,6 +34,6 @@ export class SeriesService {
   }
 
   getSeriesByTitle(title : string ) : Observable<SerieDTO[]> {
-    return this.http.get<SerieDTO[]>(`${this.apiUrl}/title?title=${title}`)
+    return this.http.get<SerieDTO[]>(`${this.apiUrl}/title/${title}`)
   }
 }

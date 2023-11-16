@@ -15,9 +15,10 @@
   <ul *ngIf="series.length > 0">
     <li *ngFor="let serie of series">
       <!-- ... (votre code d'affichage) -->
+      <p> {{serie.title}}</p>
     </li>
   </ul>
 
   <!-- Afficher un message si aucun film n'est trouvé -->
-  <p *ngIf="series.length === 0">Aucun film trouvé.</p>
+  <p *ngIf="series.length === 0">Aucune serie trouvée.</p>
 </div>

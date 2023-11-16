@@ -1,41 +1,81 @@
 .serie-details-container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    color: #333;
-  }
-  
-  .poster-container {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .serie-poster {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .description {
-    margin-bottom: 10px;
-  }
-  
-  button {
-    background-color: #900404;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: black
-  }
-  
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  text-align: justify
+}
+
+.details-container {
+  flex: 1;
+}
+
+h2 {
+  color: #900404;
+}
+
+.poster-container {
+  flex: 0 0 40%;
+  text-align: center;
+}
+
+.serie-poster {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.details-list {
+  list-style: none;
+  padding: 0;
+
+}
+
+.details-list li {
+  margin-bottom: 10px;
+
+}
+
+.details-list strong {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #900404;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.star-icon {
+  color: #f8d231;
+  font-size: 1.4rem;
+  margin-right: 5px;
+}
+.actors-container {
+  margin-top: 10px;
+  font-size: 16px;
+  color: black;
+  text-align: justify
+}
+
+.actors-container strong {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.actors-container span {
+  margin-right: 10px;
+  text-align: justify
+}
