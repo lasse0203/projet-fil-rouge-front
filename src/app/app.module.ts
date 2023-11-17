@@ -12,7 +12,8 @@ import { AsideComponent } from './component/aside/aside.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { MovieDetailsComponent } from './component/movie-details/movie-details.component';
-import { SortedMoviesComponent } from './component/sorted-movies/sorted-movies.component';
+import { MovieSortedListComponent } from './component/movie-sorted-list/movie-sorted-list.component';
+
 
 
 @NgModule({
@@ -25,8 +26,9 @@ import { SortedMoviesComponent } from './component/sorted-movies/sorted-movies.c
     AsideComponent,
     FooterComponent,
     MovieDetailsComponent,
-    SortedMoviesComponent,
-   
+    MovieSortedListComponent,
+
+
   ],
   imports: [
     BrowserModule,

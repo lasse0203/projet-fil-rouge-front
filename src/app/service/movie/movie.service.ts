@@ -37,6 +37,6 @@ export class MovieService {
   }
 
   getMoviesByTitle(title: string): Observable<MovieDTO[]> {
-    return this.http.get<MovieDTO[]>(`${this.apiUrl}/title?title=${title}`);
+    return this.http.get<MovieDTO[]>(`${this.apiUrl}/title/${title}`);
   }
 }

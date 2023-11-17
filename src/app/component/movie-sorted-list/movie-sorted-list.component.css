@@ -1,0 +1,27 @@
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+
+img {
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+
+li:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}

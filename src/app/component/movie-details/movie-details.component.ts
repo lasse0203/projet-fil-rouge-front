@@ -1,4 +1,4 @@
-// movie-details.component.ts
+
 
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
