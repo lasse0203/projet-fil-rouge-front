@@ -1,6 +1,6 @@
 <div *ngIf="movies && movies.length > 0">
   <ul>
-    <li *ngFor="let movie of movies">
+    <li *ngFor="let movie of movies" [routerLink]="['/movie-details', movie.id]">
       <img src="{{ movie.poster }}" alt="{{ movie.title }} Poster" width="50" height="75">
       {{ movie.title }}
     </li>

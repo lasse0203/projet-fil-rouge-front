@@ -11,10 +11,10 @@
     </button>
   </div>
 
-  <div *ngIf="movies.length > 0" class="results-container">
+  <div *ngIf="movies.length > 0" class="results-container" >
     <h3>Résultats de la recherche :</h3>
     <ul>
-      <li *ngFor="let movie of movies">{{ movie.title }}</li>
+      <li *ngFor="let movie of movies" [routerLink]="['/movie-details', movie.id]">{{ movie.title }}</li>
     </ul>
   </div>
 </div>

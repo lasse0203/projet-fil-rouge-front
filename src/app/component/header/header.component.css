@@ -81,14 +81,14 @@ ul {
 li {
   margin: 10px 0;
   font-size: 1.5em;
-  color: #333; /* Couleur du texte */
+  color: black; /* Couleur du texte */
   cursor: pointer;
   transition: color 0.3s ease; /* Animation de transition de la couleur du texte */
 }
 
 /* Ajoute une animation lorsque l'utilisateur survole un élément de la liste */
 li:hover {
-  color: #2bb961; /* Nouvelle couleur du texte au survol */
+  color: white; /* Nouvelle couleur du texte au survol */
 }
 /* Style pour l'icône de menu */
 /* Style pour l'icône de menu à l'extrême droite */
